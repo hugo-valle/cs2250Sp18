@@ -57,6 +57,11 @@ int main()
         temp = 65 - age;
         printf("You have %d years to retire\n", temp);
     }
+    // Special case age = 35
+    if(age == 35)
+    {
+        printf("You are at the special age %d\n", age);
+    }
 
     printf("Adios amigo\n");
     return 0;
