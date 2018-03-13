@@ -17,12 +17,9 @@
  */
 #include <stdio.h>
 #include <string.h>
+#include "superlib.h"
 
-// Constants
 const int INPUT_STR_SIZE = 50;  // Input string size
-
-// Function Prototypes
-void StrSpaceToHyphen(char modString[], char separator);
 // Main Function
 int main()
 {
@@ -34,23 +31,10 @@ int main()
 
     // Call function to modify user defined string
     StrSpaceToHyphen(userStr, ':');
-
     printf("String with hyphens: %s\n", userStr);
+
+    int t = StrCountDigits(userStr);
+    printf("Your input has [%d] digits\n", t);
 
     return 0;
 }
-
-// Function Definitions
-void StrSpaceToHyphen(char modString[], char sep) 
-{
-    int i = 0;  // Loop index
-    for (i = 0; i < strlen(modString); ++i)
-    {
-        if (modString[i] == ' ') 
-        {
-            modString[i] = sep;
-        }
-    }
-    return;
-}
-
