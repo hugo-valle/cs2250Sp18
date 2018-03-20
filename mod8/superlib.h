@@ -18,8 +18,10 @@
 
 #ifndef __SUPERLIB_H__
 #define __SUPERLIB_H__
-// Constants
-//const int INPUT_STR_SIZE = 50;  // Input string size
+// Constants 
+// Inside header files, add the keyword: static before
+// the definition.
+static const int INPUT_STR_SIZE = 50;  // Input string size
 // Function Prototypes
 void StrSpaceToHyphen(char modString[], char separator);
 // Task1: Function takes a string, returns number of digits
