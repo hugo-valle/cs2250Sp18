@@ -71,3 +71,20 @@ void InitInfoStruct(SuperDude* sd)
     //sd->sex = 'M'; // same as above
     return;
 }
+
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  CopyInfoStruct
+ *  Description:  Make a copy of a SuperDude structure and return it
+ * =====================================================================================
+ */
+SuperDude CopyInfoStruct(const SuperDude* sd)
+{
+    SuperDude tmp;
+    // tmp.  because tmp IS a Structure
+    // sd->  because sd IS an Address
+    tmp.age = sd->age;
+    tmp.weight = sd->weight;
+    tmp.sex = sd->sex;
+    return tmp;
+}

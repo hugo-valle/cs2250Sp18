@@ -25,10 +25,12 @@
 // Main Function
 int main()
 {
-    SuperDude s1;
+    SuperDude s1, s2;
     // The & operator gives you the address
     InitInfoStruct(&s1); // init struct info
     ShowInfoStruct(&s1); // display struct info
+    s2 = CopyInfoStruct(&s1);
+    ShowInfoStruct(&s2); // display struct info
 
     return 0;
 }
