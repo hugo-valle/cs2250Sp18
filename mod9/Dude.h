@@ -30,6 +30,10 @@ typedef struct SuperDude
     char sex;
 }SuperDude; // DO NOT forget the ;
 
+// Constants
+// #define ASIZE 3
+static const int ASIZE = 3;
+
 // Function Prototypes
 void ShowInfo(int age, double weight);
 // Pass a const address instead of the value
@@ -37,5 +41,7 @@ void ShowInfo(int age, double weight);
 void ShowInfoStruct(const SuperDude* sd);
 void InitInfoStruct(SuperDude* sd); // address of SuperDude type
 SuperDude CopyInfoStruct(const SuperDude* sd);
+void UpdateInfoStruct(SuperDude* sd, int myweight); // address of SuperDude type
+void ShowInfoAllStruct(const SuperDude sd[]);
 #endif /* ----- #ifndef DUDE__INC__ ----- */
 
