@@ -79,3 +79,14 @@ double Person::GetWeight()
 }
 
 
+Person Person::operator+(Person rhs) // operator + overload
+{
+    Person tmp;
+    // Add elements of objects
+    //        first   second  
+    tmp.age = age + rhs.age;
+    tmp.name = name + " " + rhs.name;
+    tmp.weight = weight + rhs.weight;
+
+    return tmp;
+}

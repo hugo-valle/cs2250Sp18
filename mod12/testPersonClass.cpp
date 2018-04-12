@@ -43,6 +43,11 @@ int main()
     
     Person p4(66,"Mario", 2.0); // Values Constructor
     p4.ShowInfo();
+    // Task 2: Enable Person + Person operation
+    p2 = p3 + p4;
+    p2.ShowInfo();
+
+    /*
     // Task: Define an array of 4 Persons and set their values to defaults
     // Display all the members of the array
     int Size = 4;
@@ -52,10 +57,7 @@ int main()
         cout << i << " ";
         persons[i].ShowInfo();
         cout<< endl;
-    }
-
-
-
+    }*/
 
     return 0;
 }
